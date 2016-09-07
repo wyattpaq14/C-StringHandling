@@ -38,6 +38,17 @@ namespace StringHandling
         private void btnEditPhoneNumber_Click(object sender, System.EventArgs e)
         {
             // TODO: Add code to edit the phone number
+            string messageBox = "";
+            string phoneNumber = txtPhoneNumber.Text;
+            phoneNumber = phoneNumber.Insert(3, "-");
+            phoneNumber = phoneNumber.Insert(7, "-");
+
+            messageBox += "Origional Number: \t" + txtPhoneNumber.Text + "\n";
+            messageBox += "Formated Number: \t" + phoneNumber + "\n";
+            MessageBox.Show(messageBox);
+
+
+
         }
 
         // TODO: Add ToInitialCap method here
