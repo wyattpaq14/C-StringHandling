@@ -20,6 +20,19 @@ namespace StringHandling
         private void btnParseName_Click(object sender, System.EventArgs e)
         {
             // TODO: Add code to parse name
+            string messageBox = "";
+            string fullName = txtFullName.Text;
+            fullName = fullName.Trim();
+            string[] names = fullName.Split(' ');
+            string firstname = names[0];
+            string middlename = names[1];
+            string lastname = names[2];
+
+
+            messageBox += "First name \t" + firstname + "\n";
+            messageBox += "Middle name \t" + middlename + "\n";
+            messageBox += "Last name \t" + lastname + "\n";
+            MessageBox.Show(messageBox);
         }
 
         private void btnEditPhoneNumber_Click(object sender, System.EventArgs e)
